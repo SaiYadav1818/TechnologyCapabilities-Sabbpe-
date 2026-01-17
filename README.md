@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SabbPe - Fintech Website
+
+A modern, desktop-first fintech website for **SabbPe**, featuring a Stripe-style mega menu navigation system built with Next.js, TypeScript, and Framer Motion.
+
+## Features
+
+- 🎨 **Modern UI/UX**: Clean, minimalist design inspired by top fintech platforms
+- 📱 **Sticky Navigation**: Professional navbar with logo, centered menu items, and CTA button
+- 🎯 **Mega Menus**: Full-width, hover-based mega menus for Products and Technology
+  - Products: Offline Payments, Online Payments, Banking Suite, Payroll & HR
+  - Technology: Technology Capabilities and Advanced Technologies
+- ✨ **Smooth Animations**: Framer Motion animations for menu transitions and interactions
+- 🎭 **Lottie Animations**: Interactive QR scan animation in Products mega menu
+- ♿ **Accessible**: Built with Radix UI for accessibility and keyboard navigation
+- 🎨 **Dark Mode Ready**: Neutral dark theme with customizable color variables
+
+## Tech Stack
+
+- **Framework**: Next.js 16.1.1
+- **Language**: TypeScript
+- **Styling**: CSS Modules + Sass
+- **UI Components**: Radix UI
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Animations**: Lottie React
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd sabbpe/frontend
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+frontend/
+├── src/
+│   ├── app/                 # Next.js app directory
+│   │   ├── layout.tsx       # Root layout
+│   │   ├── page.tsx         # Home page
+│   │   └── globals.css      # Global styles
+│   ├── components/          # React components
+│   │   ├── Navbar/          # Navigation components
+│   │   ├── Hero/            # Hero section
+│   │   └── BackgroundShapes/# Background decorative elements
+│   └── assests/             # Static assets (Lottie animations)
+├── public/                  # Public static files
+└── package.json
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build & Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Build for Production
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Start Production Server
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm start
+```
+
+### Deploy on Vercel
+
+The easiest way to deploy is using [Vercel](https://vercel.com):
+
+```bash
+npm install -g vercel
+vercel
+```
+
+Or connect your GitHub repository directly on the [Vercel platform](https://vercel.com/new).
+
+## Development
+
+- Edit `src/app/page.tsx` to modify the homepage
+- Navbar components are in `src/components/Navbar/`
+- Global styles and theme variables in `src/app/globals.css`
+
+## License
+
+Private project - All rights reserved.
