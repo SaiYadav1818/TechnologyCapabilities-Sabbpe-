@@ -161,6 +161,15 @@
   &:hover {
     background: rgba(37, 99, 235, 0.08);
   }
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+
+    &:hover {
+      background: transparent;
+    }
+  }
 }
 
 .itemLink {
@@ -176,6 +185,28 @@
   &:hover {
     color: var(--text-primary);
   }
+}
+
+.disabledLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  width: 100%;
+  cursor: not-allowed;
+}
+
+.placeholderDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgb(37, 99, 235), rgb(46, 230, 214));
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
